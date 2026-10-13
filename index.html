@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b14">
+  <title>www.anton.ee — Игровая зона</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Anton Gaming home">
+      <span class="brand-mark">A<span>•</span></span>
+      <span>anton<span class="brand-dot">.ee</span><small>GAME ZONE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Главная</a>
+      <a href="#games">Игры</a>
+      <a href="#community">Сообщество</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" id="loginOpen">Войти</button>
+      <button class="btn btn-primary" id="registerOpen">Создать аккаунт <span>↗</span></button>
+      <div class="user-pill hidden" id="userPill"><span class="avatar">A</span><span id="userName">Игрок</span><button id="logoutBtn" title="Выйти">↪</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> ТВОЯ СЛЕДУЮЩАЯ ИГРА НАЧИНАЕТСЯ ЗДЕСЬ</div>
+        <h1>ИГРАЙ.<br><span>ПОБЕЖДАЙ.</span><br>ПОВТОРЯЙ.</h1>
+        <p class="hero-text">Добро пожаловать в <strong>anton.ee</strong> — игровую зону для тех, кто любит хорошие игры, яркие моменты и новые вызовы.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#games">Выбрать игру <span>→</span></a>
+          <button class="btn btn-outline btn-large" id="discoverBtn"><span class="play-icon">▶</span> Исследовать</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>24/7</strong><span>Игровое настроение</span></div>
+          <i></i>
+          <div><strong>∞</strong><span>Новых приключений</span></div>
+          <i></i>
+          <div><strong>GG</strong><span>Хорошая игра!</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Неоновая игровая иллюстрация">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="art-grid"></div>
+        <div class="floating-chip chip-top">PLAYER ONE <span>● ONLINE</span></div>
+        <div class="controller">
+          <div class="controller-body">
+            <div class="dpad"><b></b><b></b><b></b><b></b><i></i></div>
+            <div class="controller-center"><span></span><span></span></div>
+            <div class="buttons"><b>Y</b><b>B</b><b>A</b><b>X</b></div>
+            <div class="grip grip-left"></div><div class="grip grip-right"></div>
+          </div>
+          <div class="controller-shadow"></div>
+        </div>
+        <div class="floating-chip chip-bottom"><span class="tiny-square">✦</span> LEVEL UP <strong>+100 XP</strong></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div><div class="spark spark-three">+</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Игровой девиз"><div class="ticker-track">
+      <span>LEVEL UP YOUR GAME ✦</span><span>PLAY YOUR WAY ✦</span><span>GOOD VIBES ONLY ✦</span><span>LEVEL UP YOUR GAME ✦</span><span>PLAY YOUR WAY ✦</span><span>GOOD VIBES ONLY ✦</span>
+    </div></section>
+
+    <section class="section games-section" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">ТВОЙ ВЫБОР</div><h2>ПОРА <span>ИГРАТЬ</span></h2></div>
+        <p>Выбирай настроение —<br>и вперёд к приключениям.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card game-purple">
+          <div class="game-art game-image-art"><img src="images/cs2.jpg" alt="Counter-Strike 2" loading="lazy"><span class="art-label">FPS · COMPETITIVE</span></div>
+          <div class="game-info"><div><span class="game-tag">FPS · COMPETITIVE</span><h3>Counter-Strike 2</h3><p>Командная тактика, точность и победа.</p><a class="download-link" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="noopener noreferrer">Скачать / открыть в Steam ↗</a></div></div>
+        </article>
+        <article class="game-card game-blue">
+          <div class="game-art game-image-art"><img src="images/fortnite.jpg" alt="Fortnite" loading="lazy"><span class="art-label">BATTLE ROYALE</span></div>
+          <div class="game-info"><div><span class="game-tag">BATTLE ROYALE</span><h3>Fortnite</h3><p>Строй, сражайся и доберись до победы.</p><a class="download-link" href="https://store.epicgames.com/en-US/p/fortnite" target="_blank" rel="noopener noreferrer">Скачать Fortnite ↗</a></div></div>
+        </article>
+        <article class="game-card game-orange">
+          <div class="game-art game-image-art"><img src="images/tlauncher.jpg" alt="TLauncher" loading="lazy"><span class="art-label">MINECRAFT · LAUNCHER</span></div>
+          <div class="game-info"><div><span class="game-tag">LAUNCHER</span><h3>TLauncher</h3><p>Запускай Minecraft и отправляйся в свой мир.</p><a class="download-link" href="https://tlauncher.org/en/" target="_blank" rel="noopener noreferrer">Скачать TLauncher ↗</a></div></div>
+        </article>
+      </div>
+      <div class="notice" id="gameNotice" role="status"><span>✦</span><div><strong id="noticeTitle">Готов к игре?</strong><p id="noticeText">Нажми на стрелку у карточки, чтобы выбрать игру.</p></div><button id="noticeClose" aria-label="Закрыть">×</button></div>
+    </section>
+
+    <section class="community-section" id="community">
+      <div class="community-inner">
+        <div class="community-icon">✦</div>
+        <div><div class="eyebrow">ТВОЙ УРОВЕНЬ. ТВОИ ПРАВИЛА.</div><h2>ИГРАЕМ <span>ВМЕСТЕ?</span></h2><p>Создай локальный профиль, чтобы сайт приветствовал тебя по имени.</p></div>
+        <button class="btn btn-primary btn-large" id="communityJoin">Присоединиться <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">A<span>•</span></span><span>anton<span class="brand-dot">.ee</span><small>GAME ZONE</small></span></a><span>© 2026 anton.ee · Сделано для геймеров</span><a href="#home">Наверх ↑</a></footer>
+
+  <div class="modal-backdrop hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="auth-modal">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+      <div class="modal-logo">A<span>•</span></div>
+      <div class="eyebrow">WELCOME, PLAYER</div>
+      <h2 id="modalTitle">С возвращением!</h2>
+      <p class="modal-subtitle" id="modalSubtitle">Войди в свой игровой профиль.</p>
+      <div class="auth-tabs"><button class="auth-tab selected" data-mode="login">Вход</button><button class="auth-tab" data-mode="register">Регистрация</button></div>
+      <form id="authForm">
+        <label for="username">Имя игрока</label><input id="username" name="username" autocomplete="username" placeholder="Например, Anton" required minlength="2" maxlength="24">
+        <div id="emailWrap" class="hidden"><label for="email">Электронная почта (необязательно)</label><input id="email" type="email" name="email" autocomplete="email" placeholder="you@example.com"></div>
+        <label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Не менее 4 символов" required minlength="4">
+        <button class="btn btn-primary btn-large form-submit" type="submit" id="authSubmit">Войти в игру <span>→</span></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+      <p class="demo-note">Демо-профиль хранится только в этом браузере. Не используй настоящий пароль.</p>
+    </div>
+  </div>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
